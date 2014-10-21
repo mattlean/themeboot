@@ -1,15 +1,15 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
+/*
+ * GLOBAL STYLES
+ */
 /* Padding below the footer and lighter body text */
-
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
+/*
+ * NAVBAR
+ */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
@@ -17,6 +17,7 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
+  color: red;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -32,18 +33,27 @@ body {
   width: auto;
 }
 
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
+/*
+ * CAROUSEL
+ */
 /* Carousel base class */
 .carousel {
   height: 500px;
   margin-bottom: 60px;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+}
+
+.carousel-caption h1 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* Declare heights because of positioning of img element */
@@ -69,9 +79,9 @@ body {
   border-radius: 4px;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
+/*
+ * MARKETING CONTENT
+ */
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
@@ -89,12 +99,14 @@ body {
   display: block;
 }
 
+table a small {
+  color: #5a5a5a;
+}
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
+/*
+ * RESPONSIVE CSS
+ */
 @media (min-width: 768px) {
-
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
