@@ -80,6 +80,23 @@ body {
 }
 
 /*
+ * PAGE BANNERS
+ */
+.banner {
+  height: 400px;
+  margin-bottom: 60px;
+}
+
+.banner .item {
+  height: 400px;
+  background-color: #777;
+}
+
+.banner-faq {
+
+}
+
+/*
  * MARKETING CONTENT
  */
 /* Center align the text within the three columns below the carousel */
