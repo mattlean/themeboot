@@ -84,7 +84,6 @@ body {
  */
 .banner {
   height: 400px;
-  margin-bottom: 60px;
 }
 
 .banner .item {
@@ -92,8 +91,20 @@ body {
   background-color: #777;
 }
 
-.banner-faq {
+.page-title {
+  padding: 12px;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  top: 200px;
+}
 
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 /*
@@ -104,9 +115,11 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: normal;
 }
+
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
