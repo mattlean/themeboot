@@ -7,6 +7,18 @@ body {
   color: #5a5a5a;
 }
 
+.featurette-divider {
+  clear: both;
+}
+
+h3.anchor {
+  color: #333;
+}
+
+a.anchor:hover {
+  text-decoration: none;
+}
+
 /*
  * NAVBAR
  */
