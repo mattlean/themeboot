@@ -145,8 +145,24 @@ h3.anchor {
   padding-bottom: 30px;
 }
 
+.banner-faq {
+  background: #ffffff url('img/faq.jpg') no-repeat center center;
+}
+
 .banner-schedule {
   background: #ffffff url('img/schedule.jpg') no-repeat center center;
+}
+
+.banner-location {
+  background: #ffffff url('img/location.jpg') no-repeat center center;
+}
+
+.banner-contact {
+  background: #ffffff url('img/contact.jpg') no-repeat center center;
+}
+
+.banner-blog {
+  background: #ffffff url('img/blog.jpg') no-repeat center center;
 }
 
 /*
