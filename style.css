@@ -101,15 +101,15 @@ h3.anchor {
 }
 
 .item1 {
-    background: #ffffff url('img/carousel/underconstruction.jpg') no-repeat center center;
+    background: #ffffff url('/img/carousel/underconstruction.jpg') no-repeat center center;
 }
 
 .item2 {
-    background: #ffffff url('img/carousel/casualnights.jpg') no-repeat center center;
+    background: #ffffff url('/img/carousel/casualnights.jpg') no-repeat center center;
 }
 
 .item3 {
-    background: #ffffff url('img/carousel/rankednights.jpg') no-repeat center center;
+    background: #ffffff url('/img/carousel/rankednights.jpg') no-repeat center center;
 }
 
 .carousel-txt-bg {

@@ -4,7 +4,7 @@
   "description": "WordPress theme for the Santa Cruz FGC website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -p 8000"
   },
   "repository": {
     "type": "git",
