@@ -28,6 +28,23 @@ h3.anchor {
   margin-top: 20px;
 }
 
+.blog h1 {
+  margin-bottom: 0;
+}
+
+.blog p {
+  font-size: 1.2em;
+}
+
+.blog-post-meta {
+  font-size: 1em !important;
+  color: #999;
+}
+
+.blog footer p {
+  font-size: 1em !important;
+}
+
 /*
  * NAVBAR
  */
