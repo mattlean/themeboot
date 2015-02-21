@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ultra Street Fighter IV Rankings | Santa Cruz Fighting Game Community</title>
+	<title>Super Smash Bros. Melee Rankings | Santa Cruz Fighting Game Community</title>
 	<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/style.css" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,9 +38,10 @@
 							<li class="dropdown active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rankings <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="/under-construction.html"><s>Project M</s></a></li>
-									<li><a href="/rankings/ssbm.html">Super Smash Bros. Melee</a></li>
-									<li class="active"><a href="/rankings/usf4.html">Ultra Street Fighter IV</a></li>
+									<li><a href="/rankings/pm.php">Project M</a></li>
+									<li><a href="#"><s>Super Smash Bros. for Wii U</s></a>
+									<li class="active"><a href="/rankings/ssbm.php">Super Smash Bros. Melee</a></li>
+									<li><a href="/rankings/usf4.php">Ultra Street Fighter IV</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -50,9 +51,9 @@
 		</div>
 	</div>
 	<div class="banner">
-		<div class="item banner-usf4-rank">
+		<div class="item banner-ssbm-rank">
 			<div class="container">
-				<h1 class="page-title">Ultra Street Fighter IV Rankings</h1>
+				<h1 class="page-title">Super Smash Bros. Melee Rankings</h1>
 			</div>
 		</div>
 	</div>
@@ -62,74 +63,12 @@
 			Find out more information on <a href="/blog/fight-night-ranked-edition-season-1.html">Fight Night: Ranked Edition</a>.</p>
 		</p>
 		<p class="text-center">
-			View brackets: <a href="http://challonge.com/1x4uf0g7" target="_blank">ES</a>, <a href="http://challonge.com/1mycwxjx" target="_blank">#0</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_1" target="_blank">#1</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_3" target="_blank">#3</a>
+			View brackets: <a href="http://scfgc.challonge.com/ssbm_ranked_night_1" target="_blank">#1</a>, <a href="http://scfgc.challonge.com/ssbm_ranked_night_3" target="_blank">#3</a>, <a href="http://scfgc.challonge.com/ssbm_ranked_night_6" target="_blank">#6</a>, <a href="http://scfgc.challonge.com/ssbm_ranked_night_9" target="_blank">#9</a>
 		</p>
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>Rank</th>
-					<th>Player Name</th>
-					<th>Points</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Peter</td>
-					<td>78</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>M.Bye Sin</td>
-					<td>56</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>tkrush</td>
-					<td>56</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Chase</td>
-					<td>38</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>HellaPanicSwitch</td>
-					<td>36</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>Brandon</td>
-					<td>22</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>Dickboi94</td>
-					<td>20</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>animelover1808</td>
-					<td>18</td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td>David</td>
-					<td>12</td>
-				</tr>
-				<tr>
-					<td>9</td>
-					<td>Jerome</td>
-					<td>9</td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td>PewPewU</td>
-					<td>8</td>
-				</tr>
-			<tbody>
-		</table>
+		<?php include("rs_display/rs_display_script.php") ?>
+		<?php
+		display_season_results(1);
+		?>
 		<hr class="featurette-divider">
 		<footer>
 			<p class="pull-right"><a href="https://facebook.com/groups/santacruzfgc"><img src="/img/fb.png" alt="Santa Cruz FGC Facebook Group"></a></p>

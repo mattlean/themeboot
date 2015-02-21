@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Super Smash Bros. Melee Rankings | Santa Cruz Fighting Game Community</title>
+	<title>Ultra Street Fighter IV Rankings | Santa Cruz Fighting Game Community</title>
 	<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/style.css" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,9 +38,10 @@
 							<li class="dropdown active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rankings <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="/under-construction.html"><s>Project M</s></a></li>
-									<li class="active"><a href="/rankings/ssbm.html">Super Smash Bros. Melee</a></li>
-									<li><a href="/rankings/usf4.html">Ultra Street Fighter IV</a></li>
+									<li><a href="/rankings/pm.php">Project M</a></li>
+									<li><a href="#"><s>Super Smash Bros. for Wii U</s></a>
+									<li><a href="/rankings/ssbm.php">Super Smash Bros. Melee</a></li>
+									<li class="active"><a href="/rankings/usf4.php">Ultra Street Fighter IV</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -50,9 +51,9 @@
 		</div>
 	</div>
 	<div class="banner">
-		<div class="item banner-ssbm-rank">
+		<div class="item banner-usf4-rank">
 			<div class="container">
-				<h1 class="page-title">Super Smash Bros. Melee Rankings</h1>
+				<h1 class="page-title">Ultra Street Fighter IV Rankings</h1>
 			</div>
 		</div>
 	</div>
@@ -62,79 +63,12 @@
 			Find out more information on <a href="/blog/fight-night-ranked-edition-season-1.html">Fight Night: Ranked Edition</a>.</p>
 		</p>
 		<p class="text-center">
-			View brackets: <a href="http://scfgc.challonge.com/ssbm_ranked_night_1" target="_blank">#1</a>
+			View brackets: <a href="http://challonge.com/1mycwxjx" target="_blank">#0</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_1" target="_blank">#1</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_2" target="_blank">#2</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_3" target="_blank">#3</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_5" target="_blank">#5</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_6" target="_blank">#6</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_7" target="_blank">#7</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_8" target="_blank">#8</a>, <a href="http://scfgc.challonge.com/usf4_ranked_night_9" target="_blank">#9</a>
 		</p>
-		<table class="table table-striped">
-			<thead>
-				<tr>
-					<th>Rank</th>
-					<th>Player Name</th>
-					<th>Points</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>PewPewU</td>
-					<td>32</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Arcadia</td>
-					<td>20</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Baise</td>
-					<td>12</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>Belinda</td>
-					<td>8</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>Sinzhermit</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>Smish</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>Holden</td>
-					<td>2</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>Spykes</td>
-					<td>2</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>BBoySonicX</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>Nicholas</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>Ryker</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>Vector</td>
-					<td>1</td>
-				</tr>
-			<tbody>
-		</table>
+		<?php include("rs_display/rs_display_script.php") ?>
+		<?php
+		display_season_results(2);
+		?>
 		<hr class="featurette-divider">
 		<footer>
 			<p class="pull-right"><a href="https://facebook.com/groups/santacruzfgc"><img src="/img/fb.png" alt="Santa Cruz FGC Facebook Group"></a></p>
