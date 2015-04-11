@@ -1,20 +1,20 @@
 {
-  "name": "Santa-Cruz-FGC-Theme",
-  "version": "0.0.0",
-  "homepage": "https://github.com/IsaacLean/Santa-Cruz-FGC-Theme",
+  "name": "themeboot",
+  "version": "0.1.0",
+  "homepage": "https://github.com/IsaacLean/themeboot",
   "authors": [
-    "Isaac Lean <isaaclean@creatibyte.com>"
+    "Matthew Isaac Lean <isaaclean@creatibyte.com>"
   ],
-  "description": "WordPress theme for the Santa Cruz FGC website",
+  "description": "WordPress theme built on top of Bootstrap",
   "main": "index.html",
   "keywords": [
-    "santa",
-    "cruz",
-    "fgc",
+    "themeboot",
+    "bootstrap",
     "wordpress",
-    "theme"
+    "html",
+    "css"
   ],
-  "license": "N/A",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "~3.2.0"
   }
