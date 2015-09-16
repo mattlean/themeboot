@@ -9,7 +9,7 @@
 	<div class="container content blog">
 		<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post() ?>
-		<h1><?php the_title(); ?></h1>
+		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<p class="blog-post-meta"><?php the_time( 'F j, Y' ); ?> by <?php the_author_meta( 'display_name' ); ?></p>
 		<?php the_content(); ?>
 		<hr class="featurette-divider">
