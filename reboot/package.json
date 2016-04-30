@@ -1,0 +1,19 @@
+{
+  "name": "themeboot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IsaacLean/themeboot"
+  },
+  "author": "Matthew Lean",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^1.11.3"
+  }
+}
