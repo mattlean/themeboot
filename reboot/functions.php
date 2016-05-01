@@ -1,7 +1,8 @@
 <?php
-    function register_main_nav_menu() {
-        register_nav_menu('main-nav-menu',__( 'Main Nav Menu' ));
+    function register_themeboot_menus() {
+        register_nav_menu('main-nav-menu',__('Main Nav Menu'));
+        register_nav_menu('footer-nav-menu',__('Footer Nav Menu'));
     }
 
-    add_action('init', 'register_main_nav_menu');
+    add_action('init', 'register_themeboot_menus');
 ?>

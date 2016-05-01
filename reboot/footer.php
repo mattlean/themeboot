@@ -2,7 +2,14 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>
+            &copy; 2014-2016 <?php bloginfo('name'); ?>
+            <?php wp_nav_menu(array('container' => false, 'menu_class' => 'list-inline', 'theme_location' => 'footer-nav-menu') ); ?>
+            <!-- &middot;
+            <a href="#">Privacy</a>
+            &middot;
+            <a href="#">Terms</a> -->
+        </p>
       </footer>
 
     </div><!-- /.container -->

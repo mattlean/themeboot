@@ -121,8 +121,27 @@ body {
 }
 
 .post-meta-container {
-  font-size: 1em;
   margin-bottom: 16px;
+  font-size: 1em;
+}
+
+footer p, footer ul {
+  display: inline-block;
+}
+
+
+footer li:before {
+  margin-right: 8px;
+  margin-left: 4px;
+  content: ' \00b7';
+}
+
+footer li:first-child {
+  margin-left: 10px;
+}
+
+footer .list-inline > li {
+  padding: 0;
 }
 
 
