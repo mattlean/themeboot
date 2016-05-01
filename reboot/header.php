@@ -9,7 +9,23 @@
     <meta name="author" content="">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title><?php
+        global $page, $paged;
+
+        wp_title( '|', true, 'right' );
+
+        // Add the blog name.
+        bloginfo( 'name' );
+
+        // Add the blog description for the home/front page.
+        $site_description = get_bloginfo( 'description', 'display' );
+        if ( $site_description && ( is_home() || is_front_page() ) )
+        echo " | $site_description";
+
+        // Add a page number if necessary:
+        if ( $paged >= 2 || $page >= 2 )
+        echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
+    ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -25,7 +41,30 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
+    <?php wp_head(); ?>
   </head>
   <!-- NAVBAR
 ================================================== -->
   <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <?php wp_nav_menu(array('container' => false, 'menu_class' => 'nav navbar-nav', 'theme_location' => 'main-nav-menu') ); ?>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
