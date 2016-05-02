@@ -12,12 +12,12 @@
                 <?php endif; ?>
                 <?php the_content(); ?>
             </div>
-        <?php endwhile; ?>
-        <?php
-            $banner_vals = get_post_meta(get_option('page_for_posts'), 'banner');
+            <?php
+                $banner_vals = get_post_custom_values('banner');
 
-            if($banner_vals) {
-                generate_banner_script($banner_vals[0]);
-            }
-        ?>
+                if($banner_vals) {
+                    generate_banner_script($banner_vals[0]);
+                }
+            ?>
+        <?php endwhile; ?>
 <?php get_footer(); ?>

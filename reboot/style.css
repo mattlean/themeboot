@@ -106,8 +106,8 @@ body {
 
 /* CUSTOM CSS
 -------------------------------------------------- */
-.banner {
-  background-color: blue;
+#banner {
+  background-color: #777;
   height: 400px;
 }
 
