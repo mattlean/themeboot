@@ -129,7 +129,6 @@ footer p, footer ul {
   display: inline-block;
 }
 
-
 footer li:before {
   margin-right: 8px;
   margin-left: 4px;
@@ -142,6 +141,15 @@ footer li:first-child {
 
 footer .list-inline > li {
   padding: 0;
+}
+
+.page-anchor {
+  color: #5a5a5a;
+}
+
+.page-anchor:hover {
+  color: #5a5a5a;
+  text-decoration: none;
 }
 
 
