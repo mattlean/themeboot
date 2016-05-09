@@ -185,6 +185,11 @@ footer .list-inline > li {
   .featurette-heading {
     font-size: 50px;
   }
+
+
+  .mdlg-pull-right {
+    float: right !important;
+  }
 }
 
 @media (min-width: 992px) {

@@ -47,7 +47,7 @@ function resizeGCalendar() {
         gcalendar.setAttribute('width', '720');
     } else {
         src = setAgenda(gcalendar);
-        gcalendar.setAttribute('width', '450');
+        gcalendar.setAttribute('width', '300');
     }
 }
 

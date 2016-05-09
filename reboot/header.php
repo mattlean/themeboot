@@ -51,7 +51,7 @@
               <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <?php wp_nav_menu(array('container' => false, 'menu_class' => 'nav navbar-nav pull-right', 'theme_location' => 'main-nav-menu') ); ?>
+              <?php wp_nav_menu(array('container' => false, 'menu_class' => 'nav navbar-nav mdlg-pull-right', 'theme_location' => 'main-nav-menu') ); ?>
             </div>
           </div>
         </nav>
