@@ -15,5 +15,14 @@
         }
     }
 
+    // Setup the JavaScript that will setup custom scripts
+    function generate_cscripts($cscript_locs) {
+        if($cscript_locs) {
+            foreach($cscript_locs as $key => $value) {
+                echo "<script src=\"$value\"></script>\n";
+            }
+        }
+    }
+
     add_action('init', 'register_themeboot_menus');
 ?>

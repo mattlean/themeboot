@@ -14,6 +14,13 @@
     <script src="<?php echo get_template_directory_uri(); ?>/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/holder.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/ie10-viewport-bug-workaround.js"></script>
+    <?php
+      $cscript_vals = get_post_custom_values('cscript');
+
+      if($cscript_vals) {
+          generate_cscripts($cscript_vals);
+      }
+    ?>
     <?php wp_footer(); ?>
   </body>
 </html>
