@@ -1,5 +1,7 @@
-function setAgenda(src) {
-    var splitSrc = src.split('&');
+function setAgenda(gcalendar) {
+    var newSrc = gcalendar.getAttribute('src');
+
+    var splitSrc = newSrc.split('&');
     var index = splitSrc.indexOf('mode=AGENDA');
 
     if(index > -1) {
@@ -7,42 +9,45 @@ function setAgenda(src) {
     }
 
     splitSrc.push('mode=AGENDA');
-    src = splitSrc.join('&');
-    return src;
+    newSrc = splitSrc.join('&');
+
+    if(newSrc !== gcalendar.getAttribute('src')) {
+        gcalendar.setAttribute('src', newSrc);
+    }
 }
 
-function setCalendar(src) {
-    var splitSrc = src.split('&');
+function setCalendar(gcalendar) {
+    var newSrc = gcalendar.getAttribute('src');
+
+    var splitSrc = newSrc.split('&');
     var index = splitSrc.indexOf('mode=AGENDA');
 
     if(index > -1) {
         splitSrc.splice(index, 1);
     }
 
-    src = splitSrc.join('&');
-    return src;
+    newSrc = splitSrc.join('&');
+
+    if(newSrc !== gcalendar.getAttribute('src')) {
+        gcalendar.setAttribute('src', newSrc);
+    }
 }
 
 function resizeGCalendar() {
     var gcalendar = document.getElementById('gcalendar');
-    var src = gcalendar.getAttribute('src');
 
     if(window.innerWidth >= 1200) {
-        src = setCalendar(src);
+        src = setCalendar(gcalendar);
         gcalendar.setAttribute('width', '1140');
-        gcalendar.setAttribute('src', src);
     } else if(window.innerWidth >= 992) {
-        src = setCalendar(src);
+        src = setCalendar(gcalendar);
         gcalendar.setAttribute('width', '940');
-        gcalendar.setAttribute('src', src);
     } else if(window.innerWidth >= 768) {
-        src = setCalendar(src);
+        src = setCalendar(gcalendar);
         gcalendar.setAttribute('width', '720');
-        gcalendar.setAttribute('src', src);
     } else {
-        src = setAgenda(src);
+        src = setAgenda(gcalendar);
         gcalendar.setAttribute('width', '450');
-        gcalendar.setAttribute('src', src);
     }
 }
 
